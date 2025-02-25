@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../go-basic-01/.idea/go-basic-01.iml" filepath="$PROJECT_DIR$/../go-basic-01/.idea/go-basic-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/go-basic-02.iml" filepath="$PROJECT_DIR$/.idea/go-basic-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../go-basic-03/.idea/go-basic-03.iml" filepath="$PROJECT_DIR$/../go-basic-03/.idea/go-basic-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../go-basic-04/.idea/go-basic-04.iml" filepath="$PROJECT_DIR$/../go-basic-04/.idea/go-basic-04.iml" />
+    </modules>
+  </component>
+</project>
