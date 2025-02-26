@@ -5,7 +5,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="go-basic-08" />
-    <orderEntry type="module" module-name="go-basic-09" />
   </component>
 </module>
