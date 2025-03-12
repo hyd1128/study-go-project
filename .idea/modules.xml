@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/go-basic-08/.idea/go-basic-08.iml" filepath="$PROJECT_DIR$/go-basic-08/.idea/go-basic-08.iml" />
       <module fileurl="file://$PROJECT_DIR$/go-basic-09/.idea/go-basic-09.iml" filepath="$PROJECT_DIR$/go-basic-09/.idea/go-basic-09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/go-basic-10/.idea/go-basic-10.iml" filepath="$PROJECT_DIR$/go-basic-10/.idea/go-basic-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/go_path.iml" filepath="$PROJECT_DIR$/.idea/go_path.iml" />
     </modules>
   </component>
