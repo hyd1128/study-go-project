@@ -24,5 +24,4 @@ func main() {
 	stringBuilder.WriteString(target)
 	stringBuilder.WriteString(end)
 	fmt.Println(stringBuilder.String())
-
 }

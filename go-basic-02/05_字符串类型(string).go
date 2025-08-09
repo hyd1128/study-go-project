@@ -11,7 +11,7 @@ func main() {
 	var str = "ms的go教程 \n 大法好"
 	fmt.Print(str)
 
-	fmt.Println(`\t ms的go教程Go大法好`)  // \t ms的go教程Go大法好
+	fmt.Println(`\t ms的go教程Go大法好`) // \t ms的go教程Go大法好
 	fmt.Println(`\t ms的go教程
  Go大法好`) // 使用反引号 可以进行字符串换行
 	// 反引号一般用在 需要将内容进行原样输出的时候 使用

@@ -33,6 +33,12 @@ var (
 )
 
 func main() {
+	d := 100
+	e := 200
+	f, g := 100, 200
+
+	fmt.Println(d, e, f, g)
+
 	fmt.Println(age)
 	fmt.Println(level)
 	// 类型输出
