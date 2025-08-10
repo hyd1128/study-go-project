@@ -9,6 +9,9 @@ func main() {
 	fmt.Println(max(-1, -2))
 
 	fmt.Println(test(1, 2, "123"))
+
+	x, y := testTwo(1, 2, "abc")
+	fmt.Println(x, y)
 }
 
 // 类型相同的相邻参数，参数类型可合并。
@@ -28,4 +31,10 @@ func test(x, y int, s string) (int, string) {
 	// 类型相同的相邻参数，参数类型可合并。 多返回值必须用括号。
 	n := x + y
 	return n, fmt.Sprintf(s, n)
+}
+
+func testTwo(x, y int, z string) (int, string) {
+	resultX := x + y
+	resultY := z
+	return resultX, resultY
 }

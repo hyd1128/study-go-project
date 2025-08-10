@@ -8,7 +8,7 @@ func main() {
 		因为数组的长度是固定的，所以在Go语言中很少直接使用数组。
 		var 数组变量名 [元素数量]Type
 	*/
-	var arr [3]int
+	var arr [3]int // 赋予默认值
 	fmt.Println(arr)
 
 	// 通过数组下标取值

@@ -37,4 +37,9 @@ func main() {
 	// 开头到中间指定位置的所有元素
 	fmt.Println(highRaiseBUilding[:10])
 
+	slice_one := highRaiseBUilding[10:15]
+	fmt.Println(slice_one)
+	fmt.Printf("数组类型: %T \n", highRaiseBUilding)
+	fmt.Printf("切片类型: %T \n", slice_one)
+	fmt.Println(slice_one[len(slice_one)-1])
 }

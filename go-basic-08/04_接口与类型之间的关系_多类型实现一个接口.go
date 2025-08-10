@@ -10,9 +10,9 @@ import (
 */
 
 // Mover接口
-type Mover interface {
-	move()
-}
+// type Mover interface {
+// 	move()
+// }
 
 // 狗可以动, 汽车也可以动
 type pear struct {
@@ -33,12 +33,12 @@ func (c car) move() {
 	fmt.Printf("%s速度70迈\n", c.brand)
 }
 
-func main() {
-	var x Mover
-	var a = pear{name: "旺财"}
-	var b = car{brand: "保时捷"}
-	x = a
-	x.move()
-	x = b
-	x.move()
-}
+// func main() {
+// 	var x Mover
+// 	var a = pear{name: "旺财"}
+// 	var b = car{brand: "保时捷"}
+// 	x = a
+// 	x.move()
+// 	x = b
+// 	x.move()
+// }

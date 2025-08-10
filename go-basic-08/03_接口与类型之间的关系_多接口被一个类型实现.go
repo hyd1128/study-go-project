@@ -12,9 +12,9 @@ type Sayer interface {
 	say()
 }
 
-// type Mover interface {
-// 	move()
-// }
+type Mover interface {
+	move()
+}
 
 // dog 既可以实现Sayer接口, 也可以实现Mover接口
 type dog struct {

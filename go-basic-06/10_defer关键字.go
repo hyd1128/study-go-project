@@ -1,10 +1,15 @@
 package main
 
+import (
+	"fmt"
+)
+
 // func main() {
 // 	var whatever = [5]int{1, 2, 3, 4, 5}
 //
 // 	for i := range whatever {
-// 		defer fmt.Println(i)
+// 		fmt.Printf("hello -> %v \n", whatever[i])
+// 		defer fmt.Println(whatever[i])
 // 	}
 // }
 
@@ -33,13 +38,14 @@ package main
 // 	log.Printf("函数结束")
 // }
 
-// func main() {
-// 	var whatever = [5]int{1, 2, 3, 4, 5}
-// 	for i, _ := range whatever {
-// 		// 函数正常执行,由于闭包用到的变量 i 在执行的时候已经变成4,所以输出全都是4.
-// 		defer func() { fmt.Println(i) }()
-// 	}
-// }
+func main() {
+	var whatever = [5]int{1, 2, 3, 4, 5}
+	// go 1.22版本之后for循环的每一个i都是独立的
+	for i, _ := range whatever {
+		// 函数正常执行,由于闭包用到的变量 i 在执行的时候已经变成4,所以输出全都是4.
+		defer func() { fmt.Println(i) }()
+	}
+}
 
 // func main() {
 // 	var whatever = [5]int{1, 2, 3, 4, 5}

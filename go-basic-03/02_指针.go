@@ -21,6 +21,7 @@ func main() {
 	// fmt.Printf("%p %p", &cat, &str)
 
 	// 指针和变量
+	fmt.Println("------------------")
 	var room int = 10
 	var ptr = &room
 	fmt.Printf("%p \n", &room)

@@ -1,18 +1,20 @@
 package main
 
-// func main() {
-// 	testTwo()
-// }
-//
-// func testTwo() {
-// 	defer func() {
-// 		if err := recover(); err != nil {
-// 			println(err.(string)) // 将 interface{} 转型为具体类型。
-// 		}
-// 	}()
-//
-// 	panic("panic error!")
-// }
+func main() {
+	testThree()
+}
+
+func testThree() {
+	defer func() {
+		// 捕获panic异常
+		if err := recover(); err != nil {
+			// 类型断言, 返回的是interface{} 通过变量.(类型)的方式进行断言
+			println(err.(string)) // 将 interface{} 转型为具体类型。
+		}
+	}()
+
+	panic("panic error!")
+}
 
 // import "fmt"
 //
@@ -58,21 +60,21 @@ package main
 // 	}
 // }
 
-import "fmt"
-
-func Try(fun func(), handler func(interface{})) {
-	defer func() {
-		if err := recover(); err != nil {
-			handler(err)
-		}
-	}()
-	fun()
-}
-
-func main() {
-	Try(func() {
-		panic("test panic")
-	}, func(err interface{}) {
-		fmt.Println(err)
-	})
-}
+// import "fmt"
+//
+// func Try(fun func(), handler func(interface{})) {
+// 	defer func() {
+// 		if err := recover(); err != nil {
+// 			handler(err)
+// 		}
+// 	}()
+// 	fun()
+// }
+//
+// func main() {
+// 	Try(func() {
+// 		panic("test panic")
+// 	}, func(err interface{}) {
+// 		fmt.Println(err)
+// 	})
+// }
